@@ -386,7 +386,7 @@ function engine(inputString) {
                 token = "tan3"
             }
         }else if(stringMod[i] == 'e'){
-            token = "e"
+            token = "e3"
         }else if(stringMod[i] == '('){
             tokens.push('(')
             continue next
