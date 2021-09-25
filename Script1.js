@@ -237,8 +237,8 @@ button.addEventListener('mouseover', () => {
 hisBlock.children[0].addEventListener('mouseover', () => {
     hisBlock.children[0].childNodes.forEach((el, index) => {
         if (hisBlock.children[0].children[index] !== undefined) {
-            hisBlock.children[0].children[index].style.color = 'red'
             hisBlock.children[0].children[index].onclick = () => {
+                hisBlock.children[0].children[index].style.color = 'red'
                 var part =
                     hisBlock.children[0].children[index].outerText.split('=')
                 var out1 = part[0].split('')
