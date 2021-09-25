@@ -97,7 +97,8 @@ body {
 }
 .wrapper .calcBody {
   text-align: center;
-  margin: 0px 30% 0px 30%;
+  margin: 0% 1% 0% 1%;
+  padding: 0%;
   border: 1px solid #81d4fa;
   background-color: #000000;
   min-width: 300px;
