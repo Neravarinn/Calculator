@@ -237,14 +237,18 @@ button.addEventListener('mouseover', () => {
 hisBlock.children[0].addEventListener('mouseover', () => {
     hisBlock.children[0].childNodes.forEach((el, index) => {
         if (hisBlock.children[0].children[index] !== undefined) {
-            hisBlock.children[0].children[index].onclick = () => {
-                hisBlock.children[0].children[index].style.color = 'red'
+            hisBlock.children[0].children[index].ondblclick = () => {
+                //hisBlock.children[0].children[index].style.color = 'red'
+
+                //var part =hisBlock.children[0].children[index].outerText.split('=')
+
                 var part =
-                    hisBlock.children[0].children[index].outerText.split('=')
+                    hisBlock.children[0].children[index].textContent.split('=')
                 var out1 = part[0].split('')
                 out1.pop()
                 part = out1.join('')
-                console.log(part)
+                console.dir(hisBlock.children[0].children[index])
+                //console.log(part)
                 inputB.children[0].value = part
             }
         }
