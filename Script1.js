@@ -517,6 +517,7 @@ function engine(inputString) {
         } else if (tokens.length !== 0) {
             if (token == ')') {
                 d1: do {
+                    k = numbers.length - 1
                     if (tokens[tokens.length - 1].startsWith('+') == true) {
                         number = numbers[k] + numbers[k - 1]
                         numbers.splice(k - 1, 2)
