@@ -642,7 +642,7 @@ function engine(inputString) {
                     }
                 } while (tokens[tokens.length - 1] !== '(')
                 tokens.splice(tokens.length - 1, 1)
-                if (tokens.length == 0) continue next
+                if (i + 1 !== stringMod.length) continue next
                 else {
                     d2: do {
                         k = numbers.length - 1
@@ -771,7 +771,7 @@ function engine(inputString) {
                             tokens.splice(tokens.length - 1, 1)
                             if (tokens.length == 0) break d2
                         }
-                    } while (tokens.length - 1 !== 0)
+                    } while (tokens.length !== 0)
                 }
             } else if (i + 1 == stringMod.length && tokens.length !== 0) {
                 d3: do {
